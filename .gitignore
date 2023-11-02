@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TodoList/obj/project.assets.json
+/TodoList/obj/project.nuget.cache
+/TodoList/obj/TodoList.csproj.nuget.dgspec.json
+/TodoList/obj/TodoList.csproj.nuget.g.props
+/TodoList/obj/Debug/net6.0/TodoList.AssemblyInfo.cs
+/TodoList/obj/Debug/net6.0/TodoList.AssemblyInfoInputs.cache
+/TodoList/obj/Debug/net6.0/TodoList.assets.cache
+/TodoList/obj/Debug/net6.0/TodoList.GeneratedMSBuildEditorConfig.editorconfig
