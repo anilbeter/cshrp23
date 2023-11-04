@@ -34,10 +34,25 @@ Bob
 
 c) In addition the Program should sort the List and output the sorted list too.
 */
-List<string> stringList = new();
-string stopKey = Console.ReadLine();
-while (stopKey != "stop")
+List<string> inputList = new();
+while (true)
 {
-    stringList.Add(stopKey);
-    stopKey = Console.ReadLine();
+    string input = Console.ReadLine();
+    if (input == "stop")
+        break;
+    else
+        inputList.Add(input);
+}
+
+Console.WriteLine("Printing in reversed order");
+for (int i = inputList.Count - 1; i >= 0; i--)
+{
+    Console.WriteLine(inputList[i]);
+}
+
+Console.WriteLine("Printing in sorted order");
+inputList.Sort();
+for (int i = 0; i < inputList.Count; i++)
+{
+    Console.WriteLine(inputList[i]);
 }
