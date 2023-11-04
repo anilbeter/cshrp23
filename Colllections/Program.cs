@@ -4,6 +4,7 @@ a) Declare an Integer-Array which can contain 20 values. Then use a For-Loop to 
 b) Do the same with an Integer-List.
 */
 
+/*
 using System.Reflection.Metadata;
 
 Random random = new();
@@ -14,6 +15,7 @@ for (int i = 0; i < randomNumbers.Length; i++)
     randomNumbers[i] = randomNum;
     Console.WriteLine(randomNumbers[i]);
 }
+*/
 
 /*
 Exercise 2
@@ -34,6 +36,7 @@ Bob
 
 c) In addition the Program should sort the List and output the sorted list too.
 */
+/*
 List<string> inputList = new();
 while (true)
 {
@@ -55,4 +58,27 @@ inputList.Sort();
 for (int i = 0; i < inputList.Count; i++)
 {
     Console.WriteLine(inputList[i]);
+}
+*/
+
+// 2D Arrays
+int[,] integerArray = new int[3, 3];
+integerArray[0, 0] = 1;
+integerArray[1, 0] = 2;
+integerArray[2, 0] = 3;
+
+integerArray[0, 1] = 4;
+integerArray[1, 1] = 5;
+integerArray[2, 1] = 6;
+
+integerArray[0, 2] = 7;
+integerArray[1, 2] = 8;
+integerArray[2, 2] = 9;
+
+for (int y = 0; y < 3; y++)
+{
+    for (int x = 0; x < 3; x++)
+    {
+        Console.WriteLine(integerArray[x, y]);
+    }
 }
