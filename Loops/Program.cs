@@ -1,11 +1,16 @@
-﻿Random rng = new Random();
-int score = 0;
-int dice1 = 0;
-while (dice1 != 1)
+﻿int i = 0;
+while (i < 10)
 {
-    dice1 = rng.Next(1, 7);
-    score += dice1;
-    Console.WriteLine("You rolled a " + dice1 + ". Current score: " + score);
-
+    i++;
+    if (i % 2 == 0)
+        continue;
+    Console.WriteLine(i);
+    /*
+    Output:
+    1
+    3
+    5
+    7
+    9
+    */
 }
-Console.WriteLine("You rolled 1! Final score: " + score + "!");
