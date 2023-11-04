@@ -2,15 +2,15 @@
 while (i < 10)
 {
     i++;
-    if (i % 2 == 0)
-        continue;
     Console.WriteLine(i);
+    if (i == 5)
+        break;
     /*
     Output:
     1
+    2
     3
+    4
     5
-    7
-    9
     */
 }
